@@ -9,4 +9,5 @@ CREATE TABLE `fornecimento` (
     CONSTRAINT `fk_fornecimento_produto`
         FOREIGN KEY (`CodProduto`)
         REFERENCES `produtos` (`CodProduto`)
+        'Ficha N3 PSI - GITHUB'
 ) ENGINE=InnoDB;
