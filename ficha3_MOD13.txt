@@ -1,0 +1,12 @@
+CREATE TABLE `fornecimento` (
+    `CodFornecedor` INT NOT NULL,
+    `CodProduto` INT NOT NULL,
+    `Data_Fornecimento` DATE DEFAULT NULL,
+    PRIMARY KEY (`CodFornecedor`, `CodProduto`),
+    CONSTRAINT `fk_fornecimento_fornecedor`
+        FOREIGN KEY (`CodFornecedor`)
+        REFERENCES `fornecedores` (`CodFornecedor`),
+    CONSTRAINT `fk_fornecimento_produto`
+        FOREIGN KEY (`CodProduto`)
+        REFERENCES `produtos` (`CodProduto`)
+) ENGINE=InnoDB;
