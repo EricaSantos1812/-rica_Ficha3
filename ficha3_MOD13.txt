@@ -12,4 +12,3 @@ CREATE TABLE `fornecimento` (
         'Ficha N3 PSI - GITHUB'
 ) ENGINE=InnoDB;
 
-67 aura suprema
